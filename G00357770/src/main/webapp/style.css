@@ -1,13 +1,6 @@
-table {   
-	border-bottom:1px solid gray;
-	font-family: Tahoma,Verdana,Segoe,sans-serif;
-}
-a{
-	text-decoration: none;
-}
 th{
 	border-bottom:1px solid gray;
-	background:#0775d3;
+	background:#008000;
 	margin-bottom: 22px;
 	padding:10px;
 	color: #FFFFFF;

@@ -11,28 +11,36 @@
 <body>
 	<h1>List of Orders</h1>
 	<table>
-		<tr>
-			<th>Quantity</th>
-			<th>Order Date</th>
-			<th>Customer Id</th>
-			<th>Customer Name</th>
-			<th>Product Id</th>
-			<th>Description</th>
-		</tr>
-
 		<c:forEach items="${orders}" var="order">
-		<h2>${order.oId}</h2>
+			<th>
+				<h2>${order.oId}</h2>
+			</th>
+
+			<tr>
+				<th>Quantity</th>
+				<th>Order Date</th>
+				<th>Customer Id</th>
+				<th>Customer Name</th>
+				<th>Product Id</th>
+				<th>Description</th>
+			</tr>
 			<tr>
 				<td>${order.qty}</td>
 				<td>${order.orderDate}</td>
-				<td>${order.cust}</td>
-				<td>${order.prod}</td>
+				<td>${order.cust.cId}</td>
+				<td>${order.cust.cName}</td>
+				<td>${order.prod.pId}</td>
+				<td>${order.prod.pDesc}</td>
 			</tr>
 		</c:forEach>
 	</table>
 
 	<br>
 	<a href="/index.html">Home</a>
+	<a href="/addOrder.html">Add Order</a>
+	<a href="/showProducts.html">List Products</a>
+	<a href="/showCustomers.html">List Customers</a>
+	<a href="/logout">Logout</a>
 
 </body>
 </html>

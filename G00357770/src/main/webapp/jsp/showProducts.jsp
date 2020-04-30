@@ -28,6 +28,10 @@
 
 	<br>
 	<a href="/index.html">Home</a>
+	<a href="/addProducts.html">Add Products</a>
+	<a href="/showProducts.html">List Products</a>
+	<a href="/showOrders.html">List Orders</a>
+	<a href="/logout">Logout</a>
 
 </body>
 </html>

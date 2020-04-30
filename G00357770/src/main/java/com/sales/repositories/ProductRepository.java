@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.sales.models.Product;
 
 @Repository
-public interface ProductRepository extends CrudRepository<Product, Integer> {
+public interface ProductRepository extends CrudRepository<Product, Long> {
 
 }

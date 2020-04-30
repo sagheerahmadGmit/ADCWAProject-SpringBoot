@@ -14,6 +14,7 @@ public class ProductService {
 
 	// this method gets all the products from the database
 	public ArrayList<Product> getProducts() {
+		//get all the products in the database using the product repository and save to an arraylist
 		return (ArrayList<Product>) productRepository.findAll();
 	}
 	

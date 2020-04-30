@@ -18,14 +18,15 @@ public class CustomerService {
 
 	// this method gets all the Customers from the database
 	public ArrayList<Customer> getCustomers() {
+		//get all the customers in the database using the customer repository and save to an arraylist
 		return (ArrayList<Customer>) customerRepository.findAll();
 	}
 	
 	//this method will save the new customer details
 	public Customer save(Customer customer) {
 
-		//Passes product object
-		//to be saved by the productInterface
+		//Passes customer object
+		//to be saved by the customerInterface
 		return customerRepository.save(customer);
 	}
 }

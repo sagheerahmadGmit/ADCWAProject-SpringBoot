@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- This is where the model-attribute is used from the controller -->
+	<!-- This is where the model-attribute is used from the controller -->
 	<form:form modelAttribute="product">
 		<h1>Add New Product</h1>
 		<table>
@@ -33,6 +33,7 @@
 	<br>
 	<a href="/index.html">Home</a>
 	<a href="/showProducts.html">List Products</a>
+	<a href="/showOrders.html">List Orders</a>
 
 </body>
 </html>
